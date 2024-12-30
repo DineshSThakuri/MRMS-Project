@@ -1,0 +1,64 @@
+/* General Styles */
+body {
+    font-family: "Arial", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    color: #0d6efd;
+    margin-top: 20px;
+}
+
+/* Search Results Styling */
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px auto;
+    max-width: 900px;
+}
+
+/* Each list item container */
+ul li {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Movie Image Styling */
+ul li img {
+    width: 150px;
+    height: auto;
+    margin-right: 20px;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+/* Movie Details Section */
+.movie-details {
+    flex-grow: 1;
+}
+
+/* Movie Title */
+.movie-details h3 {
+    margin: 0;
+    color: #0d6efd;
+}
+
+/* Movie Description and other details */
+.movie-details p {
+    margin: 10px 0;
+    color: #555;
+}
+
+/* Hover effect for each movie item */
+ul li:hover {
+    background-color: #f0faff;
+}

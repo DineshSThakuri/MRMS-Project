@@ -1,0 +1,286 @@
+/* General Body Styling */
+body {
+    font-family: "Arial", sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f0f0f0;
+    color: #333;
+}
+
+/* Header Styling */
+.header {
+    background: #343a40;
+    color: #fff;
+    padding: 20px;
+}
+
+.top-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.top-nav h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+/* Auth and Search Section */
+.auth-search {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Space between buttons and search form */
+}
+
+.auth-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.auth-buttons .btn {
+    font-size: 16px;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #007bff;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.auth-buttons .btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+.search-form {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex: 1;
+    max-width: 500px;
+}
+
+.search-form input[type="text"] {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.search-form button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.search-form button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+/* Main Container Styling */
+.container {
+    text-align: center;
+    padding: 60px 20px;
+    background: #fff;
+    max-width: 1200px;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.container h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+/* Buttons Styling */
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.buttons .btn {
+    font-size: 18px;
+    padding: 15px 30px;
+    color: #fff;
+    background-color: #007bff;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.buttons .btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .top-nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .top-nav h1 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .auth-search {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .search-form {
+        width: 100%;
+    }
+
+    .search-form input[type="text"] {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .container h1 {
+        font-size: 28px;
+    }
+
+    .buttons .btn {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+
+    .search-form button {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+}
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.header {
+    background: #343a40;
+    color: #fff;
+    padding: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.top-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1500px;
+
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.auth-search {
+    display: flex;
+    align-items: center;
+}
+
+.right {
+    display: flex;
+}
+.auth-buttons {
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.auth-buttons .btn {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.auth-buttons .btn:hover {
+    background-color: #0056b3;
+}
+
+.search-form {
+    display: flex;
+}
+
+.search-form input[type="text"] {
+    margin-left: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 200px;
+    margin-right: 5px;
+}
+
+.search-form button {
+    padding: 10px 20px;
+    background-color: #0400ff;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-form button:hover {
+    background-color: #0056b3;
+}
+
+/* Footer Styling */
+.footer {
+    background: #343a40;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: auto;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer p {
+    margin: 10px 0;
+    font-size: 14px;
+}
+
+.footer a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer a:hover {
+    color: #0056b3;
+}

@@ -1,0 +1,134 @@
+/* Reset default margins and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: "Arial", sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container for the content */
+.container {
+    background-color: #fff;
+    padding: 20px;
+    max-width: 600px;
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Header styling */
+h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Form label styling */
+label {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    display: block;
+    color: #555;
+}
+
+/* Select menu and textarea styling */
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    background-color: #f9f9f9;
+}
+
+/* Rating stars layout */
+.star-rating {
+    display: flex;
+    justify-content: flex-start;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+.star-rating input {
+    display: none;
+}
+
+.star-rating label {
+    font-size: 30px;
+    color: #ccc;
+    cursor: pointer;
+}
+
+.star-rating input:checked ~ label {
+    color: #f39c12;
+}
+
+.star-rating input:hover ~ label,
+.star-rating input:checked ~ label {
+    color: #f39c12;
+}
+
+/* Submit button styling */
+.submit-btn {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: #2980b9;
+}
+
+/* Back link styling */
+.back-link {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    color: #3498db;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}
+
+/* Success and error messages styling */
+.success,
+.error {
+    text-align: center;
+    font-weight: bold;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+}
+
+.success {
+    background-color: #2ecc71;
+    color: white;
+}
+
+.error {
+    background-color: #e74c3c;
+    color: white;
+}

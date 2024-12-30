@@ -1,0 +1,179 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General body styles */
+body {
+    font-family: "Arial", sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header section */
+header {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Movie album section */
+.album {
+    background-color: #fff;
+    padding: 60px 0;
+}
+
+/* Container for the movies */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Flex layout for movie cards */
+.row-cols-1,
+.row-cols-sm-2,
+.row-cols-md-3 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+/* Each movie card style */
+.card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #fff;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.card-img-top {
+    width: 100%;
+    height: 225px;
+    object-fit: cover;
+}
+
+/* Card body style */
+.card-body {
+    padding: 15px;
+}
+
+.card-body h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.card-body p {
+    font-size: 0.95rem;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+/* Button group in the card */
+.card-body .btn-group .btn {
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    transition: background-color 0.3s;
+}
+
+.card-body .btn-group .btn:hover {
+    background-color: #0056b3;
+}
+
+/* Flex properties for responsiveness */
+.col {
+    flex: 1 1 100%;
+}
+
+@media (min-width: 576px) {
+    .col-sm-2 {
+        flex: 1 1 48%;
+    }
+}
+
+@media (min-width: 768px) {
+    .col-md-3 {
+        flex: 1 1 31%;
+    }
+}
+
+/* Error message style */
+p {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #ff3e00;
+    margin-top: 20px;
+}
+
+/* Logout and Navigation links */
+.back-link {
+    display: inline-block;
+    text-align: center;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    margin: 10px 0;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.back-link:hover {
+    background-color: #0056b3;
+}
+
+/* Styling for the Logout link at the bottom */
+.logout-link {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.logout-link a {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.logout-link a:hover {
+    text-decoration: underline;
+}
+
+/* Footer styles for better page finish */
+footer {
+    padding: 20px;
+    text-align: center;
+    background-color: #007bff;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Customize the movie rating and review links */
+.back-link:last-child {
+    margin-top: 30px;
+}
+
+.back-link:not(:last-child) {
+    margin-bottom: 10px;
+}
